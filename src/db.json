@@ -60,43 +60,50 @@
           "id": 10,
           "name": "Potion",
           "image": "https://i.imgur.com/zJURwj6.jpeg",
-          "Descriptiom": "Heal a party member with this concoction."
+          "descriptiom": "Heal a party member with this concoction.",
+          "seller": "Tifa"
         },
         {
           "id": 11,
           "name": "Elixer",
           "image": "https://i.imgur.com/C8Vrekb.jpeg",
-          "biography": "Complete recovery of health and magic strength."
+          "description": "Complete recovery of health and magic strength.",
+          "seller": "Red XIII"
         },
         {
           "id": 12,
           "name": "Buster Sword",
           "image": "https://i.imgur.com/6CsMT06.jpeg",
-          "biography": "Heavy and deadly blade for warriors."
+          "description": "Heavy and deadly blade for warriors.",
+          "seller": "Cloud"
         },
         {
           "id": 13,
           "name": "Phoenix Down",
           "image": "https://i.imgur.com/rhJCj3w.jpeg",
-          "biography": "Bring a party member back to life."
+          "description": "Bring a party member back to life.",
+          "seller": "Aeris"
         },
         {
           "id": 14,
           "name": "Materia",
           "image": "https://i.imgur.com/VDGBSJm.png",
-          "biography": "Magic orbs that grant you abilities."
+          "description": "Magic orbs that grant you abilities.",
+          "seller": "Yuffie"
         },
         {
           "id": 15,
           "name": "Staff",
           "image": "https://i.imgur.com/cobLhdz.png",
-          "biography": "Weapon with magic capabilities."
+          "description": "Weapon with magic capabilities.",
+          "seller": "Aeris"
         },
         {
           "id": 16,
           "name": "Katana",
           "image": "https://i.imgur.com/qdk8kiv.png",
-          "biography": "A VERY sharp sword."
+          "description": "A VERY sharp sword.",
+          "seller": "Sephiroth"
         }
 
     ]
