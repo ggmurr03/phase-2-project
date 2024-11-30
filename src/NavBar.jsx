@@ -1,10 +1,15 @@
-import React from 'react';
+import { NavLink } from "react-router-dom";
+
 
 const NavBar = () => {
     return (
-        <div>
-            
-        </div>
+        <nav>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/additem">Add Item</NavLink>
+      <NavLink to="/sellers">Sellers</NavLink>
+      <NavLink to="/shop">Shop</NavLink>
+      <NavLink to="/cart">Cart</NavLink>
+        </nav>
     );
 }
 
