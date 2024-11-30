@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import HomePage from './HomePage'
-import ItemForm from './ItemForm'
+import FormPage from './FormPage'
 import SellersPage from './SellersPage'
 import ShopPage from './ShopPage'
 import ErrorPage from './ErrorPage'
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
     },
     {path: "/additem",
-    element: <ItemForm />,
+    element: <FormPage/>,
     errorElement: <ErrorPage />
     },
     {path: "/sellers",
