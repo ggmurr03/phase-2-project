@@ -1,10 +1,13 @@
 import React from 'react';
 
-const SellerCard = () => {
+const SellerCard = ({name, image, biography}) => {
     return (
-        <div>
-            
-        </div>
+     <li>
+        <h2>{name}</h2>
+        <img src={image} />
+        <p>{biography}</p>
+
+    </li>
     );
 }
 
