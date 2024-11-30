@@ -6,6 +6,7 @@ import ItemForm from './ItemForm'
 import SellersPage from './SellersPage'
 import ShopPage from './ShopPage'
 import ErrorPage from './ErrorPage'
+import CartPage from './CartPage'
 
 const router = createBrowserRouter([
   {path: "/",
