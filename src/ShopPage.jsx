@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import ItemCard from './ItemCard';
+import ItemForm from './ItemForm';
 
 
 
@@ -19,6 +20,7 @@ useEffect(()=>{
             <header><NavBar /></header>
             <h1>Shop</h1>
             <p>Find items to broker, journeyman.</p>
+            <ItemForm setItems={setItems} items={items}/>
             <ul>
                 {items.map(item => <ItemCard key= {item.id} name={item.name} image={item.image} description={item.description} seller={item.seller}/>)}
             </ul>

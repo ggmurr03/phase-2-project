@@ -5,13 +5,14 @@ const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
+    console.log("CartPage render")
     const storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || []
     setCartItems(storedCartItems)
   }, [])
 
 
   return (
-    <div>
+    <div >
       <header><NavBar /></header>
       <h1>Shopping Cart</h1>
       {cartItems.length === 0 ? (
@@ -29,7 +30,7 @@ const CartPage = () => {
         </ul>
       )}
     </div>
-  );
-};
+  )
+}
 
 export default CartPage;
