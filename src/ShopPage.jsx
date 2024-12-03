@@ -17,13 +17,9 @@ useEffect(()=>{
     .catch(error=>console.error(error))
 }, [])
 
-<<<<<<< HEAD
 const addItem = newItem => {
     setItems([...items, newItem]);
 }
-=======
-const itemsList = items.map(item => <ItemCard key= {item.id} name={item.name} image={item.image} description={item.description} seller={item.seller}/>)
->>>>>>> main
 
     return (
         
