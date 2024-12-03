@@ -5,7 +5,7 @@ const Search = ({items, setItems}) => {
 
     function handleSearch(event, items){
         setSearchTerm (event.target.value)
-        setItems(items.filter(item=>item.name.toLowerCase().includes(searchTerm.toLowerCase())))
+        setItems(items.filter(item=>item.name.toLowerCase().includes(event.target.value.toLowerCase())))
     }
 
     return (

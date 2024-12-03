@@ -21,17 +21,17 @@ function ItemForm({items, setItems}) {
     event.preventDefault()
     console.log('Form submitted')
 
-    setItems([...items, formData])
+    // setItems([...items, formData])
 
 
-    // fetch("http://localhost:3000/characters",{
-    //     method: "POST",
-    //     headers: {"Content-Type":"application/json"},
-    //     body: JSON.stringify(formData)
-    // })
-    // .then(resp=>resp.json())
-    // // .then(data=> setItems([...items, data]))
-    // .catch(error=>console.error(error))
+    fetch("http://localhost:3000/items",{
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(formData)
+    })
+    .then(resp=>resp.json())
+    .then(data=> setItems([...items, data]))
+    .catch(error=>console.error(error))
   }
 
   return (
