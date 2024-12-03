@@ -29,6 +29,34 @@
       "name": "Ninja",
       "image": "https://cdn.pixabay.com/photo/2017/01/25/10/39/ninja-2007576_640.jpg",
       "biography": "He was better than the rest, but when he found out about the terrible experiments that made him, he began to hate. And then, over time, he began to hate everything. Also...ninja."
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "description": "hey",
+      "seller": "Warrior",
+      "id": 6
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "description": "hey",
+      "seller": "Warrior",
+      "id": 7
+    },
+    {
+      "name": "Moogle",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "description": "hey",
+      "seller": "Warrior",
+      "id": 8
+    },
+    {
+      "name": "gooddd",
+      "image": "https://i.imgur.com/VDaPXOA_d.webp?maxwidth=520&shape=thumb&fidelity=high",
+      "description": "hey",
+      "seller": "Warrior",
+      "id": 9
     }
   ],
   "items": [
