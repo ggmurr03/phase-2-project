@@ -24,14 +24,14 @@ function ItemForm({items, setItems}) {
     setItems([...items, formData])
 
 
-    fetch("http://localhost:3000/characters",{
-        method: "POST",
-        headers: {"Content-Type":"application/json"},
-        body: JSON.stringify(formData)
-    })
-    .then(resp=>resp.json())
-    // .then(data=> setItems([...items, data]))
-    .catch(error=>console.error(error))
+    // fetch("http://localhost:3000/characters",{
+    //     method: "POST",
+    //     headers: {"Content-Type":"application/json"},
+    //     body: JSON.stringify(formData)
+    // })
+    // .then(resp=>resp.json())
+    // // .then(data=> setItems([...items, data]))
+    // .catch(error=>console.error(error))
   }
 
   return (
