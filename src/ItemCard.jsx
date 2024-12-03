@@ -22,7 +22,7 @@ const ItemCard = ({name,image,description,seller}) => {
             <h2>{name}</h2>
             <img src={image} />
             <p>{description}</p>
-            <p>{seller}</p>
+            <p>Seller: {seller}</p>
             <button onClick={handleBrokerItem}>Broker Item</button>
 
         </li>
