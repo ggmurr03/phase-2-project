@@ -14,6 +14,11 @@ useEffect(()=>{
     .then(data => setItems(data))
     .catch(error=>console.error(error))
 }, [])
+
+const addItem = newItem => {
+    setItems([...items, newItem]);
+}
+
     return (
         <div>
             <header><NavBar /></header>
