@@ -1,8 +1,16 @@
 import React from 'react';
+import { useState } from 'react';
 import NavBar from './NavBar';
 
 
 const FormPage = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        image: "",
+        description: "",
+        seller: ""
+    })
+
     return (
         <>
             <header><NavBar /></header>
