@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const Search = ({ items, setItems, originalItems }) => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("")
 
   function handleSearch(event) {
-    const targetValue = event.target.value;
-    setSearchTerm(targetValue);
+    const targetValue = event.target.value
+    setSearchTerm(targetValue)
 
     
     if (targetValue === "") {setItems(originalItems)
