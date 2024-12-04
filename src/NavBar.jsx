@@ -4,6 +4,8 @@ import styled from "styled-components";
 const StyledNav = styled.nav`
   font-family: Uncial Antiqua, cursive;
   font-size: 20px;
+  padding-top: 8px;
+  padding-bottom: 30px;
 `
 const StyledNavButton = styled.span`
   border: ridge 4px #333;
@@ -19,8 +21,8 @@ const NavBar = () => {
     return (
         <StyledNav>
       <NavLink to="/"><StyledNavButton>Home</StyledNavButton></NavLink>
-      <NavLink to="/sellers"><StyledNavButton>Sellers</StyledNavButton></NavLink>
       <NavLink to="/shop"><StyledNavButton>Shop</StyledNavButton></NavLink>
+      <NavLink to="/sellers"><StyledNavButton>Sellers</StyledNavButton></NavLink>
       <NavLink to="/cart"><StyledNavButton>Cart</StyledNavButton></NavLink>
         </StyledNav>
     );
