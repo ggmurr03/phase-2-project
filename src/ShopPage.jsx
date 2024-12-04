@@ -18,11 +18,6 @@ const ShopPage = () => {
       .catch(error => console.error(error));
   }, []);
 
-<<<<<<< HEAD
-const addItem = newItem => {
-    setItems([...items, newItem]);
-}
-=======
   const itemsList = items.map(item =>
     <ItemCard
       key={item.id}
@@ -32,7 +27,6 @@ const addItem = newItem => {
       seller={item.seller}
     />
   );
->>>>>>> main
 
   return (
     <div>
