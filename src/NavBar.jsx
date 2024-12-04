@@ -5,7 +5,7 @@ const StyledNav = styled.nav`
   font-family: Uncial Antiqua, cursive;
   font-size: 20px;
   padding-top: 8px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 `
 const StyledNavButton = styled.span`
   border: ridge 4px #333;
@@ -13,8 +13,10 @@ const StyledNavButton = styled.span`
   padding: 5px 50px;
   &:hover{
     color: white;
-    background: #bfbfbf;
+    background: #8c8c8c;
+    border: ridge 4px gold;
   }
+  background: #bfbfbf
 `
 
 const NavBar = () => {
