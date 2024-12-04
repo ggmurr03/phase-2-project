@@ -2,18 +2,26 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
-  background: papayawhip;
-  font-family: MedievalSharp;
-  font-size:
+  font-family: Uncial Antiqua, cursive;
+  font-size: 20px;
+`
+const StyledNavButton = styled.span`
+  border: ridge 4px #333;
+  border-radius: 10px;
+  padding: 5px 50px;
+  &:hover{
+    color: white;
+    background: #bfbfbf;
+  }
 `
 
 const NavBar = () => {
     return (
         <StyledNav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/sellers">Sellers</NavLink>
-      <NavLink to="/shop">Shop</NavLink>
-      <NavLink to="/cart">Cart</NavLink>
+      <NavLink to="/"><StyledNavButton>Home</StyledNavButton></NavLink>
+      <NavLink to="/sellers"><StyledNavButton>Sellers</StyledNavButton></NavLink>
+      <NavLink to="/shop"><StyledNavButton>Shop</StyledNavButton></NavLink>
+      <NavLink to="/cart"><StyledNavButton>Cart</StyledNavButton></NavLink>
         </StyledNav>
     );
 }
