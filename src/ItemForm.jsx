@@ -7,7 +7,7 @@ const StyledForm = styled.form`
   box-sizing: border-box;
   font-family: Uncial Antiqua, cursive;
   font-size: 20px;
-  border: ridge 5px gold;
+  border: ridge 5px #D4AF37;
 `
 function ItemForm({items, setItems}) {
   const [formData, setFormData] = useState({

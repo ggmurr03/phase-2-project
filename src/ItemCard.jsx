@@ -1,5 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import styled from "styled-components";
+
+const StyledCard = styled.li`
+    font-family: Uncial Antiqua, cursive;
+    color: gold;
+    border: ridge 8px #333;
+    background-color: #8c8c8c;
+`
+const StyledImg = styled.img`
+    padding: 10px;
+`
 
 const ItemCard = ({itemId,name,image,description,seller,items,setItems}) => {
 
@@ -19,26 +30,24 @@ const ItemCard = ({itemId,name,image,description,seller,items,setItems}) => {
     }
 
     function handleRemoveItem(){
-        
-        fetch(`http://localhost:3000/items/${itemId}`, {
+        fetch(`http://localhost:3000/items/${itemId.toString()}`, {
             method: "DELETE",
         })
-            .then((resp) => resp.json())
-            .then(() => console.log("Removed from shop"))            
-            .then(()=>setItems(items.filter(i => i.id !== itemId)))
+            .then((resp) => resp.json())         
+            .then(()=>setItems(items.filter(i => i.id.toString() !== itemId.toString())))
             .catch(error=>console.error(error))
     }
 
     return (
-        <li>
+        <StyledCard>
             <h2>{name}</h2>
-            <img src={image} />
+            <StyledImg src={image} />
             <p>{description}</p>
             <p>Seller: {seller}</p>
             <button onClick={handleBrokerItem}>Broker Item</button>
+            <div></div>
             <button onClick={handleRemoveItem}>Remove from Shop</button>
-
-        </li>
+        </StyledCard>
     );
 }
 

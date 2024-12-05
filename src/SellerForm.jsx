@@ -1,4 +1,14 @@
 import React, { useState } from 'react';
+import styled from "styled-components";
+
+const StyledForm = styled.form`
+  width: 200px;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: Uncial Antiqua, cursive;
+  font-size: 20px;
+  border: ridge 5px #D4AF37;
+`
 
 function SellerForm({sellers, setSellers}) {
     const [sellerFormData, setSellerFormData] = useState({
@@ -30,7 +40,7 @@ function SellerForm({sellers, setSellers}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <StyledForm onSubmit={handleSubmit}>
             <label htmlFor="name">Seller Name:</label>
             <input
                 type="text"
@@ -58,7 +68,7 @@ function SellerForm({sellers, setSellers}) {
                 required
             />
             <button type='submit'>Submit</button>
-        </form>
+        </StyledForm>
     )
 }
 

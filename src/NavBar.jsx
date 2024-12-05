@@ -15,7 +15,7 @@ const StyledNavButton = styled.span`
   &:hover{
     color: white;
     background: #8c8c8c;
-    border: ridge 4px gold;
+    border: ridge 4px #D4AF37;
   }
   background: #bfbfbf
 `
