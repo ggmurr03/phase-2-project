@@ -30,13 +30,11 @@ const ItemCard = ({itemId,name,image,description,seller,items,setItems}) => {
     }
 
     function handleRemoveItem(){
-        
-        fetch(`http://localhost:3000/items/${itemId}`, {
+        fetch(`http://localhost:3000/items/${itemId.toString()}`, {
             method: "DELETE",
         })
-            .then((resp) => resp.json())
-            .then(() => console.log("Removed from shop"))            
-            .then(()=>setItems(items.filter(i => i.id !== itemId)))
+            .then((resp) => resp.json())         
+            .then(()=>setItems(items.filter(i => i.id.toString() !== itemId.toString())))
             .catch(error=>console.error(error))
     }
 
