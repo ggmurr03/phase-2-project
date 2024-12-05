@@ -49,7 +49,7 @@ function SellerForm({sellers, setSellers}) {
                 onChange={handleChange}
                 required
             />
-            <label htmlFor="biography">Seller Name:</label>
+            <label htmlFor="biography">Seller Bio:</label>
             <textarea
                 id="biography"
                 name="biography"
