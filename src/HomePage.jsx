@@ -20,7 +20,7 @@ const StyledP = styled.p`
 
 const StyledHomePageImg = styled.img`
     max-width: 700px;
-    border: ridge 5px gold;
+    border: ridge 5px #D4AF37;
 `
 const HomePage = () => {
     return (
