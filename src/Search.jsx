@@ -1,4 +1,11 @@
 import React, { useState } from 'react';
+import styled from "styled-components";
+
+const StyledDiv = styled.div`
+  padding-top: 20px;
+  font-family: Uncial Antiqua, cursive;
+  font-size: 20px;
+`
 
 const Search = ({ items, setItems, originalItems }) => {
   const [searchTerm, setSearchTerm] = useState("")
@@ -14,8 +21,9 @@ const Search = ({ items, setItems, originalItems }) => {
   }
 
   return (
-    <div>
+    <StyledDiv>
       <label htmlFor="search">Search Items:</label>
+      <div></div>
       <input
         type="text"
         id="search"
@@ -23,7 +31,7 @@ const Search = ({ items, setItems, originalItems }) => {
         onChange={handleSearch}
         value={searchTerm}
       />
-    </div>
+    </StyledDiv>
   );
 };
 
