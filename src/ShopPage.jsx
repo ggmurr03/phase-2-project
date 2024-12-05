@@ -20,7 +20,7 @@ const ShopPage = () => {
 
   const itemsList = items.map(item =>
     <ItemCard
-      key={item.id}
+      itemId={item.id}
       name={item.name}
       image={item.image}
       description={item.description}
