@@ -2,10 +2,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
+  background-color: #f4f4f9*;
   font-family: Uncial Antiqua, cursive;
   font-size: 20px;
-  padding-top: 8px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 `
 const StyledNavButton = styled.span`
   border: ridge 4px #333;

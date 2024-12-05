@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const StyledH1 = styled.h1`
     font-family: Uncial Antiqua, cursive;
-    font-size: 3em;
-    padding-bottom: 15px;
+    font-size: 48px;
+    padding-bottom: 10px;
 `
 const StyledDiv = styled.div`
     text-align: center;
@@ -14,6 +14,7 @@ const StyledP = styled.p`
     width: 50%;
     margin: auto;
     font-family: Uncial Antiqua, cursive;
+    font-size: 16px;
     padding-top: 30px
 `
 

@@ -1,8 +1,23 @@
 import React, { useEffect, useState } from 'react';
+import styled from "styled-components";
 import NavBar from './NavBar';
 import ItemCard from './ItemCard';
 import ItemForm from './ItemForm';
 import Search from './Search';
+
+const StyledDiv = styled.div`
+    text-align: center;
+`
+
+const StyledH1 = styled.h1`
+    font-family: Uncial Antiqua, cursive;
+    font-size: 48px;
+`
+const StyledP = styled.p`
+    font-family: Uncial Antiqua, cursive;
+    font-size: 26px;
+    padding-bottom: 10px
+`
 
 const ShopPage = () => {
   const [items, setItems] = useState([])
@@ -34,13 +49,15 @@ const ShopPage = () => {
   return (
     <div>
       <header><NavBar /></header>
-      <h1>Shop</h1>
-      <p>Find items to broker, journeyman.</p>
-      <ItemForm setItems={setItems} items={items} />
-      <Search setItems={setItems} items={items} originalItems={itemsForSearch} />
-      <ul>
-        {itemsList}
-      </ul>
+      <StyledDiv>
+        <StyledH1>Shop</StyledH1>
+        <StyledP>Find items to broker, journeyman.</StyledP>
+        <ItemForm setItems={setItems} items={items} />
+        <Search setItems={setItems} items={items} originalItems={itemsForSearch} />
+        <ul>
+          {itemsList}
+        </ul>
+      </StyledDiv>
     </div>
   );
 }
