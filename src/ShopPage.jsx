@@ -27,7 +27,7 @@ const ShopPage = () => {
       description={item.description}
       seller={item.seller}
       items={items}
-      setItems={setItems}  
+      setItems={setItems}
     />
   );
 
