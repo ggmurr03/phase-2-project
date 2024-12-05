@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import { useEffect, useState } from 'react';
 import SellerCard from './SellerCard';
+import SellerForm from './SellerForm';
 
 
 const SellersPage = () => {
@@ -17,6 +18,7 @@ const SellersPage = () => {
                 <header><NavBar /></header>
                 <h1>Sellers</h1>
                 <p>Get to know the sellers.</p>
+                <SellerForm sellers={sellers} setSellers={setSellers} />
                 <ul>
                     {sellers.map(seller => <SellerCard key= {seller.id} name={seller.name} image={seller.image} biography={seller.biography}/>)}
                 </ul>
