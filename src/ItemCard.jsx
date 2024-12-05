@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ItemCard = ({itemId,name,image,description,seller}) => {
+const ItemCard = ({itemId,name,image,description,seller,items,setItems}) => {
 
     const navigate = useNavigate()
 
@@ -19,11 +19,13 @@ const ItemCard = ({itemId,name,image,description,seller}) => {
     }
 
     function handleRemoveItem(){
+        
         fetch(`http://localhost:3000/items/${itemId}`, {
             method: "DELETE",
         })
             .then((resp) => resp.json())
-            .then(() => console.log("Removed from shop"))
+            .then(() => console.log("Removed from shop"))            
+            .then(()=>setItems(items.filter(i => i.id !== itemId)))
             .catch(error=>console.error(error))
     }
 
