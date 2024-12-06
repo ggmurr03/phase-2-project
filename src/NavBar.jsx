@@ -23,10 +23,10 @@ const StyledNavButton = styled.span`
 const NavBar = () => {
     return (
         <StyledNav>
-      <NavLink to="/"><StyledNavButton>Home</StyledNavButton></NavLink>
-      <NavLink to="/shop"><StyledNavButton>Shop</StyledNavButton></NavLink>
-      <NavLink to="/sellers"><StyledNavButton>Sellers</StyledNavButton></NavLink>
-      <NavLink to="/cart"><StyledNavButton>Cart</StyledNavButton></NavLink>
+          <NavLink to="/"><StyledNavButton>Home</StyledNavButton></NavLink>
+          <NavLink to="/shop"><StyledNavButton>Shop</StyledNavButton></NavLink>
+          <NavLink to="/sellers"><StyledNavButton>Sellers</StyledNavButton></NavLink>
+          <NavLink to="/cart"><StyledNavButton>Cart</StyledNavButton></NavLink>
         </StyledNav>
     );
 }
